@@ -156,7 +156,7 @@ jobs:
           keys: [backend-build]
       # Your job code here
       - run:
-          name: scan frontend
+          name: scan backend
           command: |
             cd backend
             npm install
@@ -165,8 +165,8 @@ jobs:
             npm audit fix --audit-level=critical --force
             npm audit fix --force
       - save_cache:
-          paths: [frontend/node_modules]
-          key: frontend-build
+          paths: [backend/node_modules]
+          key: backend-build
 
   deploy-infrastructure:
     docker:

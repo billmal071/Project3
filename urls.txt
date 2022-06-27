@@ -1,5 +1,5 @@
 github url: https://github.com/billmal071/Project3
 s3 bucket url: http://udapeople-1e48703.s3-website-us-east-1.amazonaws.com
-frontend url:  https://d31xzxnh04lbxq.cloudfront.net/index.html#/employees
-backend url: http://54.152.19.185:3030/
+frontend url:  http://d31xzxnh04lbxq.cloudfront.net/index.html#/employees
+backend url: http://54.152.19.185:3030/api/status
 prometheus server url: http://54.152.19.185:9090/graph

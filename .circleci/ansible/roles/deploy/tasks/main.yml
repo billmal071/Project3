@@ -20,6 +20,7 @@
     TYPEORM_DATABASE: "{{ lookup('env', 'TYPEORM_DATABASE') }}"
   shell: |
     npm install
+    sudo npm i -g typescript
     pm2 stop default
     # npm run start:prod
-    pm2 start -f dist/main.js
+    pm2 start -f src/main.ts
