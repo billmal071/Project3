@@ -545,7 +545,7 @@ workflows:
       - deploy-infrastructure:
           requires: [test-frontend, test-backend, scan-frontend, scan-backend]
           filters:
-            branches
+            branches:
               only: [main]
       - configure-infrastructure:
           requires: [deploy-infrastructure]
