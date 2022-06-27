@@ -227,7 +227,7 @@ jobs:
           name: Install dependencies
           command: |
             apk add --update --no-cache tar gzip ansible aws-cli openssh
-       - attach_workspace:
+      - attach_workspace:
           at: ~/
       - run:
           name: Configure server
