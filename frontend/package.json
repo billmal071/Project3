@@ -13,7 +13,9 @@
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "build:prod": "webpack -p --progress --colors",
     "build": "webpack --mode development --progress --colors",
-    "format": "prettier --write \"src/**/*.{ts,tsx,css}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "license": "MIT",
   "devDependencies": {
@@ -104,7 +106,8 @@
     "redux": "^4.0.3",
     "redux-actions": "^2.6.5",
     "redux-thunk": "^2.3.0",
-    "sweetalert2": "^8.13.4"
+    "sweetalert2": "^8.13.4",
+    "@snyk/protect": "latest"
   },
   "jest": {
     "rootDir": "src",
@@ -142,5 +145,6 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
     }
   },
-  "homepage": "http://mywebsite.com/relativepath"
+  "homepage": "http://mywebsite.com/relativepath",
+  "snyk": true
 }
